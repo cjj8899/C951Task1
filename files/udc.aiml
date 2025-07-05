@@ -1,7 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
   <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <pattern>Initial Messaging</pattern>
+    <template> You're almost done! This career bot will help you determine what job you mgiht be interested in after school! Do you want to know more?
+    <button>
+        <text>Yes</text>
+        <postback>Career</postback>
+    </button>
+    <button>
+        <text>Im good</text>
+    </button>
+    </template>
   </category>
+  
+  
+<category>
+    <pattern>Career</pattern>
+    
+    <template>We're going to go over some questions to see what job you might like.
+    <br></br>
+    Do you like designing?
+    
+    <button>
+        <text>Yes</text>
+        <postback>Front question</postback>
+    </button>
+    
+    <button>
+        <text>No</text>
+        <postback>Back question</postback>
+    </button>
+        
+    </template>
+</category>
+
+<category>
+    <pattern>Front question</pattern>
+    <template> Did you like designing websites and affecting how they look?
+    <button>
+        <text>Yes</text>
+        <postback>Front question 2</postback>
+    </button>
+        
+        <button>
+            <text>No</text>
+            <postback>Application Question</postback>
+        </button>
+        
+    </template>
+</category>
+
+<category>
+    <pattern>Front question 2</pattern>
+    <template>Are you interested in creating and formatting what an end-user can see?
+    
+    <button>
+        <text>Yes</text>
+        <postback>front-end programmer information</postback>
+    </button>
+        
+    </template>
+</category>
+  
 </aiml>
+
