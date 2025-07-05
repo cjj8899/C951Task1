@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+	
+<category>
+    <pattern>application information</pattern>
+    <template>
+        I think you'd like to be an application programmer!
+        <br></br>
+        Application programmers mainly focus on creating computer and phone applications that will run on top of an operating system. Think of video games and phone games!
+        
+        <button>
+            <text>Select here to try again to see if another job might work!</text>
+            <postback>Career</postback>
+        </button>
+        
+    </template>
+</category>
+
+    
 </aiml>

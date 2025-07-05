@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+<category>
+        <pattern>initial</pattern>
+        <template> You're almost done! This career bot will help you determine what job you mgiht be interested in after school! Do you want to know more?
+ 
+            <button>
+                <text>Yes</text>
+                <postback>Career</postback>
+            </button>
+            
+            <button>
+                <text>I'm good</text>
+                <postback>No</postback>
+            </button>
+        </template>
+</category>
+  
+<category>
+    <pattern>Career</pattern>
+    
+    <template>We're going to go over some questions to see what job you might like.
+    <br></br>
+    Do you like designing?
+    
+    <button>
+        <text>Yes</text>
+        <postback>Front question</postback>
+    </button>
+    
+    <button>
+        <text>No</text>
+        <postback>Back question</postback>
+    </button>
+        
+    </template>
+</category>
+
+<category>
+    <pattern>Front question</pattern>
+    <template> Did you like designing websites and affecting how they look?
+    <button>
+        <text>Yes</text>
+        <postback>Front question 2</postback>
+    </button>
+        
+        <button>
+            <text>No</text>
+            <postback>Application question</postback>
+        </button>
+        
+    </template>
+</category>
+
+<category>
+    <pattern>Front question 2</pattern>
+    <template>Are you interested in creating and formatting what an end-user can see?
+    
+        <button>
+        <text>Yes</text>
+        <postback>front end programmer information</postback>
+    </button>
+        
+        <button>
+        <text>No</text>
+        <postback>Back question</postback>
+    </button>
+    
+    </template>
+</category>
+
+<category>
+    <pattern>Application question</pattern>
+    <template>Are you interested in creating phone apps and games?
+        <button>
+            <text>Yes</text>
+            <postback>Application question 2</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>Back question</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Application question 2</pattern>
+    <template>Is Java and Swift languages you want to spend most of your time with?
+        <button>
+            <text>Yes</text>
+            <postback>application information</postback>
+        </button>
+        
+        <button>
+            <text>No</text>
+            <postback>Software question</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Back question</pattern>
+    <template>Do you like working with Databases?
+        
+        <button>
+            <text>Yes</text>
+            <postback>Back question 2</postback>
+        </button>
+        
+        <button>
+            <text>No</text>
+            <postback>Software question</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Back question 2</pattern>
+    <template> Do you enjoy working with strucured query language?
+        
+        <button>
+            <text>Yes</text>
+            <postback>back end programmer information</postback>
+        </button>
+        
+        <button>
+            <text>No</text>
+            <postback>Network question</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Software question</pattern>
+    <template>Do you like using Python and Java?
+        
+        <button>
+            <text>Yes</text>
+            <postback>Software question 2</postback>
+        </button>
+        
+        <button>
+            <text>No</text>
+            <postback>Front question</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Software question 2</pattern>
+    <template>Do you like creating larger scale for computers and operating systems over applications that run on them?
+        
+        <button>
+            <text>Yes</text>
+            <postback>Software information</postback>
+        </button>
+        
+        <button>
+            <text>No</text>
+            <postback></postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Network question</pattern>
+    <template>Do you have experience and enjoy working with transfer control protocols?
+        
+        <button>
+            <text>Yes</text>
+            <postback>Network question 2</postback>
+        </button>
+        
+        <button>
+            <text>No</text>
+            <postback>Front question</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Network question 2</pattern>
+    <template>Are you interested in learning and working on networks, or the communication between computers?
+        
+        <button>
+            <text>Yes</text>
+            <postback>Network information</postback>
+        </button>
+        
+        <button>
+            <text>No</text>
+            <postback>Back question</postback>
+        </button>
+    </template>
+</category>
+
+</aiml>
